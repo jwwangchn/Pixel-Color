@@ -55,7 +55,7 @@ static void onMouse(int event, int x, int y, int f, void *)
 
 int main()
 {
-    src = imread("../image/lena.jpg");
+    src = imread("../image/arrow.jpg");
     imshow(window_name, src);
 
     setMouseCallback(window_name, onMouse, 0);
