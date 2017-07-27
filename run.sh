@@ -9,11 +9,15 @@ fi
 cd build
 
 # 判断build文件夹中是否有文件
-if [ ! -f "./" ];then
-    make clean
+
+files=`ls $build`
+if [ -z "$files" ]; then
+    echo "no make clean"
 else
-    echo "build不需要执行make clean"
+    echo "used make clean"
+    make clean
 fi
+
 # 编译
 cmake ..
 make
