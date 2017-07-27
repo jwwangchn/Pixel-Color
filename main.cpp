@@ -25,13 +25,13 @@ static void onMouse(int event, int x, int y, int f, void *)
     int V = hsv.val[2];
 
     char name[30];
-    sprintf(name, "B=%d", B);
+    sprintf(name, "R=%d", R);
     putText(image, name, Point(150, 40), FONT_HERSHEY_SIMPLEX, .7, Scalar(0, 255, 0), 2, 8, false);
 
     sprintf(name, "G=%d", G);
     putText(image, name, Point(150, 80), FONT_HERSHEY_SIMPLEX, .7, Scalar(0, 255, 0), 2, 8, false);
 
-    sprintf(name, "R=%d", R);
+    sprintf(name, "B=%d", B);
     putText(image, name, Point(150, 120), FONT_HERSHEY_SIMPLEX, .7, Scalar(0, 255, 0), 2, 8, false);
 
     sprintf(name, "H=%d", H);
