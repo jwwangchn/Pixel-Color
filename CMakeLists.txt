@@ -23,7 +23,7 @@ FILE(GLOB sourcefiles "*.cpp" "*.c")
 add_executable(pixel-color ${sourcefiles})
 
 # library
-find_package(OpenCV 2 REQUIRED)
+find_package(OpenCV 3 REQUIRED)
 message(STATUS "OpenCV version: ${OpenCV_VERSION}")
 
 target_link_libraries(pixel-color ${OpenCV_LIBS})
